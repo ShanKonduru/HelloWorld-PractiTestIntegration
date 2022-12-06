@@ -1,8 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Random rnd = new Random(10);
-int value = rnd.Next(1, 10);
+Random rnd = new Random();
+int value = rnd.Next();
 Console.WriteLine("Value " + value);
-if(value==0 )
+if(value%2==0 )
 {
     Console.WriteLine("Test will be PASSED");
 }
@@ -13,10 +13,10 @@ else
 
 for (int i = 1; i <= 1000; i++)
 {
-    Console.WriteLine(i + " Hello, World!");
+    Console.Write("[" + i + "] Hello, World!");
 }
 
-if(value<=5 )
+if(value%2==0 )
 {
     Console.WriteLine("Success");
     return (int)MyExitCode.Success;
