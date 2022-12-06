@@ -1,6 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Random rnd = new Random(10);
 int value = rnd.Next(1, 10);
+Console.WriteLine("Value " + value);
+if(value==0 )
+{
+    Console.WriteLine("Test will be PASSED");
+}
+else
+{
+    Console.WriteLine("Test Will fail with UnknownError");
+}
 
 for (int i = 1; i <= 1000; i++)
 {
